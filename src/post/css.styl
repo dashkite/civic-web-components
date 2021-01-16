@@ -1,0 +1,66 @@
+:host
+  display flex
+  flex-flow column
+  align-items center
+
+  p
+    margin 0
+    padding 0
+    margin-bottom 1rem
+
+  article
+    max-width 32rem
+    border-bottom 1px solid silver
+    margin-bottom 1rem
+
+    header
+      display flex
+      align-items center
+      margin-bottom 0.5rem
+      img.avatar
+        margin-right 1rem
+        border 1px solid black
+        border-radius 50%
+        height 3rem
+      .byline
+        display flex
+        flex-wrap wrap
+        p
+          width max-content
+          margin-bottom 0.25rem
+          color #666
+          &.author
+            color black
+            font-weight bold
+          &.published, &.context
+            font-style italic
+          &:not(:last-child)
+            &::after
+              content "\00A0"
+
+    section
+      margin-left 4rem
+      margin-bottom 1rem
+      img
+        width 100%
+        object-fit cover
+        border-radius 0.5rem
+
+    footer
+      nav
+        font-size 15px
+        line-height 15px
+        display flex
+        justify-content flex-end
+        align-items center
+        padding 1rem
+        a
+          display flex
+          align-items center
+          margin-right 1em
+          color #555
+          svg
+            height 1em
+            width 1em
+          span
+            margin-left 0.25em

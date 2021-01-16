@@ -1,0 +1,26 @@
+article
+  header
+    img.avatar(src = avatar)
+    .byline
+      p.author= author
+      p.published= published
+      if context
+        p.context= context
+  section
+    vellum-markdown
+      script(type = "text/markdown")
+        = content
+  if media
+    section.media
+      img(src = media)
+  footer
+    nav
+      a(href="#")
+        svg: use(href = "/media/images/sprites.svg#reply")
+        span Reply
+      a(href="#")
+        svg: use(href = "/media/images/sprites.svg#share")
+        span Share
+      a(href="#")
+        svg: use(href = "/media/images/sprites.svg#more")
+        span More

@@ -1,12 +1,12 @@
 import * as c from "@dashkite/carbon"
 import * as k from "@dashkite/katana"
 import html from "./html.pug"
-import css from "./css"
+import css from "./css.styl"
 
 class extends c.Handle
 
   c.mixin @, [
-    c.tag "vellum-article"
+    c.tag "civic-post"
     c.diff
     c.initialize [
       c.shadow
